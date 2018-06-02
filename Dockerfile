@@ -7,9 +7,9 @@ RUN pip3 install -r requirements.txt
 
 # An RGB input image for local debug/testing
 # Move it to the root dir where inference code (and tutorial) expects to find it
-RUN mv 1047.tif /1047.tif
+#RUN mv 1047.tif /1047.tif
 
 # Rename the trained checkpoint from the baseline model release to `model.pb`
 # so that the `run.sh` file will find and use it
-RUN mv vanilla.pb model.pb
+#RUN mv vanilla.pb model.pb
 # Note: you can swap in one of your own checkpoints instead, just change the line above
